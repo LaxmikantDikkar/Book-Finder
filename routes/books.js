@@ -5,7 +5,7 @@ import Favorite from "../models/Favorite.js";
 const router = express.Router();
 
 // 🔍 Search books
-router.get("/", async (req, res) => {
+router.get("/search", async (req, res) => {
 
   const { title, author, isbn, subject } = req.query;
   let query = "";
