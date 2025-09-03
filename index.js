@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 import bookRoutes from "./routes/books.js";
+import path from "path";
 const app = express();
 
 dotenv.config();
