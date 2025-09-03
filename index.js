@@ -17,7 +17,9 @@ mongoose.connect(process.env.MONGO_URI, {
 })
 .then(()=> console.log("MongoDB Connected"))
 .catch(err => console.log(err));
-
+app.get("/",()=>{
+  res.send("page found");
+});
 app.use("/api/books", bookRoutes);
 
 const PORT = process.env.PORT || 5000;
